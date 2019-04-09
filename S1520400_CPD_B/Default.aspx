@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="S1520400_CPD_B.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="S1520400_CPD_B._Default" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -23,7 +23,8 @@
                             <asp:Image ID="itemPlaceholder" runat="server" />
                         </LayoutTemplate>
                         <ItemTemplate>
-                            <asp:Literal ID="label" Text='<%# Eval("Title") %>' runat="server"/>
+                            <asp:Literal ID="label" Text='<%# Eval("Title") %>' runat="server"/>
+
                             <audio src='<%# Eval("Url") %>' controls="" preload="none"></audio><br />
                         </ItemTemplate>
                     </asp:ListView>

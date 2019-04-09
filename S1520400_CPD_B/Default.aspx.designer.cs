@@ -10,7 +10,7 @@
 namespace S1520400_CPD_B {
     
     
-    public partial class Default {
+    public partial class _Default {
         
         /// <summary>
         /// Head1 control.
