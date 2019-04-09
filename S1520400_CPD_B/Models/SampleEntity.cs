@@ -13,7 +13,8 @@ namespace S1520400_CPD_B.Models
         public string Mp3Blob { get; set; }
         public string SampleMp3Blob { get; set; }
         public string SampleMp3Url { get; set; }
-        public DateTime SampleDate { get; set; }
+        //using ? to allow DateTime to be nullable
+        public DateTime? SampleDate { get; set; }
 
         public SampleEntity(string partitionKey, string sampleID)
         {
