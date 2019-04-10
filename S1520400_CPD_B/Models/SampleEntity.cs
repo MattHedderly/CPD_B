@@ -6,6 +6,7 @@ namespace S1520400_CPD_B.Models
 {
     public class SampleEntity : TableEntity
     {
+        // properties available for the entity
         public string SampleID { get; set; }
         public string Title { get; set; }
         public string Artist { get; set; }

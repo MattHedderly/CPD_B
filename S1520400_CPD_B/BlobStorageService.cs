@@ -16,7 +16,7 @@ namespace S1520400_CPD_B
             CloudBlobContainer blobContainer = blobClient.GetContainerReference("musicgallery");
             if (blobContainer.CreateIfNotExists())
             {
-                // Enable public access on the newly created "photogallery" container.
+                // Enable public access on the newly created "musicgallery" container.
                 blobContainer.SetPermissions(
                     new BlobContainerPermissions
                     {
