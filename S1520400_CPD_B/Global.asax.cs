@@ -20,6 +20,8 @@ namespace S1520400_CPD_B
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
+            InitialiseSamples.go();
+
                         
         }
     }
