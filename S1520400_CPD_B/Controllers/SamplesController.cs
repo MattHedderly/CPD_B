@@ -24,7 +24,7 @@ namespace S1520400_CPD_B.Controllers
 
         public SamplesController()
         {
-            storageAccount = CloudStorageAccount.Parse(ConfigurationManager.ConnectionStrings["AzureWebJobsStorage"].ToString());
+            storageAccount = CloudStorageAccount.Parse(ConfigurationManager.ConnectionStrings["AzureStorage"].ToString());
             tableClient = storageAccount.CreateCloudTableClient();
             table = tableClient.GetTableReference("Samples");
         }
